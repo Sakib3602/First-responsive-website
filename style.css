@@ -47,6 +47,10 @@ nav li {
 font-size: 64px;
 font-weight: 700;
 }
+.brandwi{
+    width: 800px;
+    margin: 0px auto;
+}
 .brandtext p{
     color: var(--Dark-03, #727272);
 font-size: 16px;
@@ -70,6 +74,72 @@ margin-top: 20px ;
     margin-top: 30px;
 }
 
+main{
+    width: 1240px;
+    margin: 30px auto;
+    
+}
+
+.quick{
+    display: flex;
+
+}
+.left{
+    width: 50%;
+    display: grid;
+    grid-template-areas: 
+    "op1 op2"
+    "op3 op4"
+    ;
+    gap: 20px;
+}
+.left img{
+    width: 100%;
+}
+.op1{
+    grid-area: op1;
+}
+.op2{
+    grid-area: op2;
+}
+.op3{
+    grid-area: op3;
+}
+.op4{
+    grid-area: op4;
+}
+
+.right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 40px;
+}
+
+.rightwidth{
+    width: 500px;
+    
+}
+
+.right p{
+margin-top: 15px;
+color: var(--Dark-03, #727272);
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+}
+.right button{
+    width: 160px;
+height: 54px;
+background-color: #FF900E;
+font-size: 16px;
+font-weight: 600;
+margin-top: 15px;
+border: none;
+border-radius: 10px;
+color: white;
+}
 
 
 
@@ -95,14 +165,139 @@ margin-top: 20px ;
         flex-wrap: wrap;
         margin-top: 20px;
     }
+    .rightwidth{
+        width: 100%;
+    }
+
+    main{
+        width: 100%;
+    }
+    
+    .left{
+        grid-template-areas: 
+        "op1"
+       
+        
+        ;
+        width: 100%;
+        margin-top: 10px;
+        padding: 20px;
+       
+    }
+    
+    .left img{
+       
+        width: 100%;
+    }
+    .op2, .op3, .op4{
+        display: none;
+    }
+    .brandwi{
+        width: 100%;
+    }
+    .quick{
+        flex-direction: column-reverse;
+    }
+    .rightwidth {
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+        margin-left: 10px;
+    }
     
 }
 
-@media screen and (min-height:577px) and (max-height:786px) {
+@media screen and (min-width:577px) and (max-width:786px) {
     .brandtext{
+        width: 100%;
+    }
+    .brandwi{
         width: 100%;
     }
     header{
         padding: 40px;
     }
+    main{
+        width: 100%;
+    }
+    .quick{
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    
+    .op3, .op4{
+        display: none;
+    }
+    .left{
+        grid-template-areas: 
+        "op1 op2"
+       
+        
+        ;
+        width: 100%;
+        margin-top: 10px;
+        padding: 20px;
+       
+    }
+    
+}
+
+/*  */
+
+@media screen and (min-width:787px) and (max-width:990px) {
+   header{
+    padding: 50px 50px;
+   }
+   .brandimg{
+    width: 100%;
+   }
+   .brandtext{
+    width: 100%;
+   }
+   .brandwi{
+    width: 100%;
+   }
+    main{
+        width: 100%;
+    }
+    .quick{
+        flex-direction: column-reverse;
+    }
+    
+    .op3, .op4{
+        display: none;
+    }
+    .left{
+        grid-template-areas: 
+        "op1 op2"
+       
+        
+        ;
+        width: 100%;
+        margin-top: 10px;
+        padding: 20px;
+       
+    }
+    
+}
+@media screen and (min-width:991px) and (max-width:1200px){
+ header{
+    padding: 50px 50px;
+ }
+ .quick{
+    width: 100%;
+    /* flex-direction: column-reverse; */
+ }
+ .left{
+    width: 100%;
+ }
+ .right{
+    width: 100%;
+ }
+ main{
+    width: 100%;
+    padding: 50px 50px;
+ }
 }
