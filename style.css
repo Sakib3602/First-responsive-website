@@ -292,6 +292,10 @@ border: none;
 /* media for responsive */
 
 @media screen and (max-width: 576px) {
+  .sponsor-text {
+    width: 100%;
+}
+  
   .love{
     flex-direction: column;
   }
